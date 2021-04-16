@@ -14,9 +14,9 @@ class Queue {
     }
 
 
-    enqueue(val){
+    enqueue(value){
 
-        let newNode = new Node(val);
+        let newNode = new Node(value);
         
         if(!this.first){
             this.first = newNode;

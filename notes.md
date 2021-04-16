@@ -5,6 +5,7 @@ Path sum
 
 # Big O
 https://cs.slides.com/colt_steele/big-o-notation#/0/0/0
+https://www.bigocheatsheet.com/
 
 ## Time
 - Instead of "timing" things, we should count the number of simple operations a computer has to perform
