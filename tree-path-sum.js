@@ -36,6 +36,7 @@ let PathSum = function (root, sum) {
       response = true;
     }
 
+    
     helper(node.left, currentSum);  // traverse the tree recursively
     helper(node.right, currentSum);
   }
