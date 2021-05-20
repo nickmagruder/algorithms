@@ -1,10 +1,127 @@
-Challenge:
+# Progress
+## 1 - Arrays and Strings
+- CtCI solved: 0/9
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: 50%
 
-Find if tree has a leaf, then find the sum of the path to the leaf
-Path sum
+## 2 - Linked Lists
+- CtCI solved: 0/8
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: 70%
+
+## 3 - Stacks & Queues
+- CtCI solved: 0/6
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: 50%
+
+## 4 - Trees
+- CtCI solved (w/ graphs): 0/12
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: 50%
+
+## 4 - Graphs
+- CtCI solved(w/ trees): 0/12
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: 10%
+
+## 5 - Bit Manipulation ...
+- CtCI solved: 0/8
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: 0%
+
+## 6 - Math and Logic Puzzles
+- CtCI solved: 0/10
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 7 - Object-Oriented Design
+- CtCI solved: 0/9
+- Leetcode Solved
+  - Easy: 0/2
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 8 - Recursion
+- CtCI solved (w/ Dynamic): 0/14
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 8 - Dynamic Programming
+- CtCI solved (w/ Recursion): 0/14
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 9 - System Design and Scalability
+- CtCI solved: 0/8
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 10 - Sorting and Searching
+- CtCI solved: 0/11
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 11 - Testing
+- CtCI solved: 0/6
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 16 - Moderate Questions
+- CtCI solved: 0/26
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
+## 
+- CtCI solved: 0/
+- Leetcode Solved
+  - Easy: 
+  - Medium: 
+  - Hard: 
+- Confidence: %
+
 
 # Big O
-https://cs.slides.com/colt_steele/big-o-notation#/0/0/0
+https://cs.slides.com/colt_steele/big-o-notation
 https://www.bigocheatsheet.com/
 
 ## Time
@@ -57,9 +174,11 @@ function addUpTo(n) {
 - O(log n) complexity is great! Its almost constant!
 - Certain searching algorithms run at O(log n)
 
-# Stacks
-https://cs.slides.com/colt_steele/stacks#/18/0/3
+# Big 0 of Arrays and Objects
+https://cs.slides.com/colt_steele/built-in-data-structures-25
 
+# Stacks
+https://cs.slides.com/colt_steele/stacks
 
 # Queues
 https://cs.slides.com/colt_steele/queues
