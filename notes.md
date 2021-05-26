@@ -119,6 +119,9 @@
   - Hard: 
 - Confidence: %
 
+# Problem Solving Approaches
+- https://cs.slides.com/colt_steele/problem-solving-patterns
+
 
 # Big O
 https://cs.slides.com/colt_steele/big-o-notation
