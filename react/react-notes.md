@@ -28,4 +28,28 @@
 
 ## Classes
 - Classes can return HTML
-- 
+
+## Props.children
+- anything between the tags
+
+## String Interpolation
+- Use the back tick ` and NOT regular single or double quotes (' and ") for string interpolation on image src. This is an easy mistake to make as you cannot interpolate the strings when using regular quotes, you must use back ticks!
+
+## Synthetic Events
+- Fake React events when a dom-change happens like "onChange"
+
+# Destructuring
+- const { monsters, searchField } = this.state;
+  - IS THE SAME AS:
+    - const monsters = this.state.monsters;
+    - const searchField = this.state.searchField;
+
+# Class Methods and Arrow Functions
+- JS does not set the scope of "this" on functions
+  - EX: a method function
+- It has to explicitly state the context
+- Declare in the constructor
+  - use .bind to set the context of "this" to whatever is passed to it
+- Better practice:
+  - Use ES6 arrow functions
+  - Arrow functions use "lexical" scoping to automatically bind the "this" scope to where they were first defined

@@ -122,6 +122,13 @@
 # Problem Solving Approaches
 - https://cs.slides.com/colt_steele/problem-solving-patterns
 
+# Problem Solving Patterns
+- https://cs.slides.com/colt_steele/problem-solving-patterns#/26
+
+## Frequency Counter
+- Using objects or sets to collects values and their frequencies
+- Can often avoid the need for next loops
+
 
 # Big O
 https://cs.slides.com/colt_steele/big-o-notation
