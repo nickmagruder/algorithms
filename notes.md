@@ -126,9 +126,18 @@
 - https://cs.slides.com/colt_steele/problem-solving-patterns#/26
 
 ## Frequency Counter
+- https://cs.slides.com/colt_steele/problem-solving-patterns#/27
+
 - Using objects or sets to collects values and their frequencies
 - Can often avoid the need for next loops
-- 
+- Typical pattern:
+  - Push values to an object (in the first loop)
+  - check the second set of values against the object (in a second loop)
+
+## Multiple Pointers
+- https://cs.slides.com/colt_steele/problem-solving-patterns#/33
+- Create pointers/values that correspond to an index or position and move towards beginning, end or middle depending on needs/criteria
+  - Very efficient, minimal space complexity
 
 
 # Big O
