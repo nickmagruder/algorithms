@@ -139,6 +139,14 @@
 - Create pointers/values that correspond to an index or position and move towards beginning, end or middle depending on needs/criteria
   - Very efficient, minimal space complexity
 
+## Sliding Window
+- https://cs.slides.com/colt_steele/problem-solving-patterns#/40
+- Look at a rolling "window" of values (typically in an array) in order to prevent comparing to the entire array multiple times. EX: Look at 3 numbers in an array and return the the largest of 3, look at 3 at a time and just subtract the first one and add the next on on the next step, if total is larger than "maxvalue", push number to "maxvalue"
+
+## Divide and Conquer
+- https://cs.slides.com/colt_steele/problem-solving-patterns#/45
+- Basically a binary search!
+
 
 # Big O
 https://cs.slides.com/colt_steele/big-o-notation
@@ -196,6 +204,11 @@ function addUpTo(n) {
 
 # Big 0 of Arrays and Objects
 https://cs.slides.com/colt_steele/built-in-data-structures-25
+
+
+# Searching Algorithms
+- https://cs.slides.com/colt_steele/tries-21
+- 
 
 # Stacks
 https://cs.slides.com/colt_steele/stacks
