@@ -208,7 +208,11 @@ https://cs.slides.com/colt_steele/built-in-data-structures-25
 
 # Searching Algorithms
 - https://cs.slides.com/colt_steele/tries-21
-- 
+
+## Linear Search
+- https://cs.slides.com/colt_steele/tries-21#/4
+- Javascript built-in methods use linear search
+- Set interval, checking everything one item at a time
 
 # Stacks
 https://cs.slides.com/colt_steele/stacks
