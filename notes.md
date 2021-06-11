@@ -4,7 +4,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: 50%
 
 ## 2 - Linked Lists
@@ -12,7 +11,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: 70%
 
 ## 3 - Stacks & Queues
@@ -20,7 +18,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: 50%
 
 ## 4 - Trees
@@ -28,7 +25,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: 50%
 
 ## 4 - Graphs
@@ -36,7 +32,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: 10%
 
 ## 5 - Bit Manipulation ...
@@ -44,7 +39,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: 0%
 
 ## 6 - Math and Logic Puzzles
@@ -52,7 +46,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 7 - Object-Oriented Design
@@ -60,7 +53,6 @@
 - Leetcode Solved
   - Easy: 0/2
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 8 - Recursion
@@ -68,7 +60,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 8 - Dynamic Programming
@@ -76,7 +67,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 9 - System Design and Scalability
@@ -84,7 +74,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 10 - Sorting and Searching
@@ -92,7 +81,6 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 11 - Testing
@@ -100,24 +88,12 @@
 - Leetcode Solved
   - Easy: 
   - Medium: 
-  - Hard: 
 - Confidence: %
 
 ## 16 - Moderate Questions
 - CtCI solved: 0/26
-- Leetcode Solved
-  - Easy: 
-  - Medium: 
-  - Hard: 
 - Confidence: %
 
-## 
-- CtCI solved: 0/
-- Leetcode Solved
-  - Easy: 
-  - Medium: 
-  - Hard: 
-- Confidence: %
 
 # Problem Solving Approaches
 - https://cs.slides.com/colt_steele/problem-solving-patterns
