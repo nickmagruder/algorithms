@@ -7,7 +7,7 @@
 - Confidence: 50%
 
 ## 2 - Linked Lists
-- CtCI solved: 0/8
+- CtCI solved: 1/8
 - Leetcode Solved
   - Easy: 
   - Medium: 
