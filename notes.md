@@ -1,4 +1,35 @@
 # Progress
+
+# Structure Memorization
+	- Singly Linked Lists
+		○ Node/Class - 95%
+		○ Push - 90%
+		○ Pop - 90%
+		○ Reverse - 80%
+		○ Traverse/Print - 85%
+	- Doubly Linked Lists
+		○ H
+	- Stacks
+		○ Node - 99%
+		○ Class - 99%
+		○ Push - 95%
+		○ Pop - 90%
+	- Queues
+		○ Node - 99%
+		○ Class - 99%
+		○ Enqueue - 85%
+		○ Dequeue -  90%
+	- Trees
+		○ Node 99%
+		○ Class 99%
+		○ preOrder traversal - 90%
+		○ pathSum - 95%
+	- QuickSort
+		○ H
+	- Hash
+H
+
+
 ## 1 - Arrays and Strings
 - CtCI solved: 0/9
 - Leetcode Solved
