@@ -1,29 +1,29 @@
 # Progress
 
 # Structure Memorization
-	- Singly Linked Lists
-		○ Node/Class - 95%
-		○ Push - 90%
-		○ Pop - 90%
-		○ Reverse - 80%
-		○ Traverse/Print - 85%
+	- Linked Lists
+		○ Node/Class - 70%
+		○ Push - 70%
+		○ Pop - %
+		○ Reverse - %
+		○ Traverse/Print - %
 	- Doubly Linked Lists
 		○ H
 	- Stacks
-		○ Node - 99%
-		○ Class - 99%
-		○ Push - 95%
-		○ Pop - 90%
+		○ Node - %
+		○ Class - %
+		○ Push - %
+		○ Pop - %
 	- Queues
-		○ Node - 99%
-		○ Class - 99%
-		○ Enqueue - 85%
-		○ Dequeue -  90%
+		○ Node - %
+		○ Class - %
+		○ Enqueue - %
+		○ Dequeue -  %
 	- Trees
-		○ Node 99%
-		○ Class 99%
-		○ preOrder traversal - 90%
-		○ pathSum - 95%
+		○ Node %
+		○ Class %
+		○ preOrder traversal - %
+		○ pathSum - %
 	- QuickSort
 		○ H
 	- Hash

@@ -50,6 +50,11 @@
 - It has to explicitly state the context
 - Declare in the constructor
   - use .bind to set the context of "this" to whatever is passed to it
+  - ex: this.handlechange = this.handlechange.bind(this);
+    - When placed within the constructor (but not directly inside the state) it "binds" the ".this" context to that of the App component
+
 - Better practice:
-  - Use ES6 arrow functions
+  - Use ES6 arrow functions!!!
   - Arrow functions use "lexical" scoping to automatically bind the "this" scope to where they were first defined
+  - Less verbose
+  - Arrow functions automatically allow you to set "this" when the function is defined
