@@ -2,6 +2,12 @@
 
 # Key Concepts
 
+# TOP 3 THINGS!
+1. Decide on Components
+2. Decide the state and where it will live
+3. WHat changes when state changes?
+
+
 ##  Declarative
 - React does all DOM updates
 - React is declarative vs imperative like raw JS
@@ -58,3 +64,29 @@
   - Arrow functions use "lexical" scoping to automatically bind the "this" scope to where they were first defined
   - Less verbose
   - Arrow functions automatically allow you to set "this" when the function is defined
+
+# 54. Asynchronous setState
+# Rewatch!!!!!!!!!!!!!!!!!!!!!!
+- React library usually "batches" set state calls for performance of lots of calls are happening
+- State always "one step" behind since state updates happen asychronously
+
+- Always include props as arguments:
+  - constructor(props) {
+      super(props)
+  }
+
+# 55. Lifecycle Methods 
+- componentDidMount
+- onClick
+
+# 56. Mounting
+- Phase starts before component is on the DOM
+- First it calls the constructor
+
+# 57. Updating 
+# Rewatch!!!!!!!!!!!!!!!!!!!!!!
+- Any future updates or forceUpdate() will caused component to go into update phase
+- shouldComponentUpdate
+  - determines whether who chain needs to happen
+  - Return false to skip update cycle
+  - If the props coming in aren't different than those we already have, there is no reason to rerender
