@@ -90,3 +90,9 @@
   - determines whether who chain needs to happen
   - Return false to skip update cycle
   - If the props coming in aren't different than those we already have, there is no reason to rerender
+
+# 78. React Router DOM
+# Rewatch!!!!!!!!!!!!!!!!!!!!!!
+
+# 79. withRouter()
+# Rewatch!!!!!!!!!!!!!!!!!!!!!!
