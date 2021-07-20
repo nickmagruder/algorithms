@@ -53,16 +53,16 @@ H
 
 ## 4 - Trees
 - CtCI solved (w/ graphs): 0/12
-- Leetcode Solved
-  - Easy: 
-  - Medium: 
+- Leetcode Solved (w/ graphs)
+  - Easy: 0/5
+  - Medium: 0/6
 - Confidence: 50%
 
 ## 4 - Graphs
 - CtCI solved(w/ trees): 0/12
-- Leetcode Solved
-  - Easy: 
-  - Medium: 
+- Leetcode Solved (w/ trees)
+  - Easy: 0/5
+  - Medium: 0/6
 - Confidence: 10%
 
 ## 5 - Bit Manipulation ...
