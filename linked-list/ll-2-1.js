@@ -59,8 +59,8 @@ b.next = c;
 c.next = d;
 d.next = e;
 
-removeDups(a);
-printLinkedList(a);
+console.log(removeDups(a));
+console.log(printLinkedList(a));
 
 let f = new LinkedList('f');
 let g = new LinkedList('g');
@@ -73,8 +73,8 @@ g.next = h;
 h.next = i;
 i.next = j;
 
-removeDups(f);
-printLinkedList(f);
+console.log(removeDups(f));
+console.log(printLinkedList(f));
 
 let k = new LinkedList('g');
 let l = new LinkedList('g');
@@ -87,23 +87,6 @@ l.next = m;
 m.next = n;
 n.next = o;
 
-removeDups(k);
-printLinkedList(k);
+console.log(removeDups(k));
+console.log(printLinkedList(k));
 
-
-////////////////////////////////////////////////////////////////////////////
-
-// 2.2 - Return Kth to Last
-// Implement an algorithm to find the kth to last element of singly linked list
-
-
-class Node {
-  constructor(value){
-    this.value = value;
-    this.next = null;
-  }
-}
-
-class LinkedList {
-  
-}
