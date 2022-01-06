@@ -108,7 +108,7 @@ function getDescendantDepth(descendant, topAncestor) {
 function backtrackAncestralTree(lowerDescendant, higherDescendant, diff) {
 
   while (diff > 0) {
-    lowerDescendant - lowerDescendant.ancestor;
+    lowerDescendant = lowerDescendant.ancestor;
     diff--;
   }
 
@@ -116,6 +116,7 @@ function backtrackAncestralTree(lowerDescendant, higherDescendant, diff) {
     lowerDescendant = lowerDescendant.ancestor;
     higherDescendant = higherDescendant.ancestor;
   }
+  
   return lowerDescendant;
 }
 
