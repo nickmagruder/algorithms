@@ -102,7 +102,7 @@ var removeNthFromEnd = function (head, n) {
 
   while (head) {
 
-    let NextNode = head.next;
+    let nextNode = head.next;
     head.next = prevNode;
     prevNode = head;
     head = nextNode;

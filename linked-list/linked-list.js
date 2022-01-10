@@ -13,7 +13,6 @@ class LinkedList {
         this.length = 0;
     }
 
-
     push(value) {
 
         let newNode = new Node(value);
@@ -31,8 +30,6 @@ class LinkedList {
         return this;
     }
 
-
-    
     pop() {
 
         if (!this.head) return undefined;
@@ -57,7 +54,6 @@ class LinkedList {
         return current;
     }
 
-
     shift() {
 
         if (!this.head) return undefined;
@@ -75,7 +71,6 @@ class LinkedList {
         return currentHead;
     }
 
-
     unshift(value) {
 
         let newNode = new Node(value);
@@ -90,7 +85,6 @@ class LinkedList {
         return this;
     }
 
-
     get(index) {
         if (index < 0 || index >= this.length) return null;
         let counter = 0;
@@ -101,7 +95,6 @@ class LinkedList {
         }
         return current;
     }
-
 
     set(index, value) {
         let foundNode = this.get(index);
@@ -127,7 +120,6 @@ class LinkedList {
         return true;
     }
 
-
     remove(index) {
         if (index < 0 || index >= this.length) return undefined;
         if (index === 0) return this.shift();
@@ -138,7 +130,6 @@ class LinkedList {
         this.length--;
         return removed;
     }
-
 
     reverse() {
 
@@ -157,7 +148,6 @@ class LinkedList {
         }
         return this;
     }
-
 
     printTraverse() {
 
