@@ -6,6 +6,7 @@
 - git remote add origin {new repo url}
 
 
+
 Instead of this:
 npx create-react-app crwn-clothing
 
