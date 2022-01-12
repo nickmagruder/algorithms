@@ -23,16 +23,14 @@ class Node {
   }
 }
 
-
 class BinarySearchTree {
   constructor() {
     this.root = null;
   }
 
-//////////////////////////   INSERT   ////////////////////////// 
+  //////////////////////////   INSERT   //////////////////////////
 
   insert(value) {
-
     let newNode = new Node(value);
 
     if (this.root === null) {
@@ -43,7 +41,6 @@ class BinarySearchTree {
     let current = this.root;
 
     while (true) {
-
       if (value === current.value) return undefined;
 
       if (value < current.value) {
@@ -53,36 +50,31 @@ class BinarySearchTree {
         }
 
         current = current.left;
-
       } else {
-
         if (current.right === null) {
           current.right = newNode;
           return this;
         }
 
         current = current.right;
-
       }
     }
   }
 
-//////////////////////////   FIND  ////////////////////////// 
+  //////////////////////////   FIND  //////////////////////////
 
   find(value) {
-
     if (this.root === null) return false;
 
     let current = this.root,
       found = false;
 
-    while (current && !found) {      // while "there is" a current, and "found" is false
+    while (current && !found) {
+      // while "there is" a current, and "found" is false
       if (value < current.value) {
         current = current.left;
-
       } else if (value > current.value) {
         current = current.right;
-
       } else {
         found = true;
       }
@@ -92,10 +84,9 @@ class BinarySearchTree {
     return current;
   }
 
-  //////////////////////////   CONTAINS?  ////////////////////////// 
+  //////////////////////////   CONTAINS?  //////////////////////////
 
   contains(value) {
-
     if (this.root === null) return false;
 
     let current = this.root,
@@ -104,10 +95,8 @@ class BinarySearchTree {
     while (current && !found) {
       if (value < current.value) {
         current = current.left;
-
       } else if (value > current.value) {
         current = current.right;
-
       } else {
         return true;
       }
@@ -116,18 +105,11 @@ class BinarySearchTree {
   }
 }
 
-
-
-
 let tree = new BinarySearchTree();
-tree.insert(10)
-tree.insert(5)
-tree.insert(13)
-tree.insert(11)
-tree.insert(2)
-tree.insert(16)
-tree.insert(7)
-
-
-
-
+tree.insert(10);
+tree.insert(5);
+tree.insert(13);
+tree.insert(11);
+tree.insert(2);
+tree.insert(16);
+tree.insert(7);
