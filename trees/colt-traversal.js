@@ -1,13 +1,3 @@
-/* 
-Slides:
-https://cs.slides.com/colt_steele/trees#/15/0/3 
-
-BreadthFirst
-- Use a queue (or array)
-- Iterative
-*/
-
-
 class Node {
     constructor(value) {
         this.value = value;
