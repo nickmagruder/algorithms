@@ -1,20 +1,15 @@
-class LinkedList {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-  }
-}
+let users = [
+  { bio: null, email: 'user@domain.com', firstName: 'Carl' },
+  { bio: null, email: 'user@domain.com', firstName: 'Bob' },
+  { bio: null, email: 'user@domain.com', firstName: 'Anna' },
+];
 
-function reverseList(head) {
-  let prevNode = null;
+users.sort(function (a, b) {
+  let nameA = a.firstName.toLowerCase();
+  let nameB = b.firstName.toLowerCase();
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
+});
 
-  while (head) {
-    let nextNode = head.next;
-    head.next = prevNode;
-    prevNode = head;
-    head = nextNode;
-  }
-
-  return prevNode;
-}
-
+console.log(users);
