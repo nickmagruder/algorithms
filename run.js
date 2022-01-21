@@ -1,15 +1,55 @@
-let users = [
-  { bio: null, email: 'user@domain.com', firstName: 'Carl' },
-  { bio: null, email: 'user@domain.com', firstName: 'Bob' },
-  { bio: null, email: 'user@domain.com', firstName: 'Anna' },
+let students = [
+  {
+     'id': 001,
+     'f_name': 'Alex',
+     'l_name': 'B',
+     'gender': 'M',
+     'married': false,
+     'age': 22,
+     'paid': 250,  
+     'courses': ['JavaScript', 'React']
+  },
+  {
+     'id': 002,
+     'f_name': 'Ibrahim',
+     'l_name': 'M',
+     'gender': 'M',
+     'married': true,
+     'age': 32,
+     'paid': 150,  
+     'courses': ['JavaScript', 'PWA']
+  },
+  {
+     'id': 003,
+     'f_name': 'Rubi',
+     'l_name': 'S',
+     'gender': 'F',
+     'married': false,
+     'age': 27,
+     'paid': 350,  
+     'courses': ['Blogging', 'React', 'UX']
+  },
+  {
+     'id': 004,
+     'f_name': 'Zack',
+     'l_name': 'F',
+     'gender': 'M',
+     'married': true,
+     'age': 36,
+     'paid': 250,  
+     'courses': ['Git', 'React', 'Branding']
+  } 
 ];
 
-users.sort(function (a, b) {
-  let nameA = a.firstName.toLowerCase();
-  let nameB = b.firstName.toLowerCase();
-  if (nameA < nameB) return -1;
-  if (nameA > nameB) return 1;
-  return 0;
+
+const femaleStudents = students.filter((element, index) => {
+  return element.gender === 'F';
+})
+
+console.log(femaleStudents);
+
+const fullNames = students.map((element, index) => {
+  return {'fullName': element['f_name'] + ' ' + element['l_name']}
 });
 
-console.log(users);
+console.log(fullNames);
