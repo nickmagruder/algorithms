@@ -12,6 +12,7 @@ function twoNumberSum(array, targetSum) {
 
     if (possibleMatch in numbers) {
       return [possibleMatch, num];
+
     } else {
       numbers[num] = true;
     }
@@ -94,17 +95,15 @@ sortedSquaredArray(array2);
 // 4- Tournament Winner
 ////////////////////////////////////////////////////////////////////
 
-const HOME_TEAM_WON = 1;
-
 function tournamentWinner(competitions, results) {
-  let currentBestTeam = "";
+  let currentBestTeam = '';
   const scores = { [currentBestTeam]: 0 };
 
   for (let i = 0; i < competitions.length; i++) {
     const result = results[i];
     const [homeTeam, awayTeam] = competitions[i];
 
-    const winningTeam = result === HOME_TEAM_WON ? homeTeam : awayTeam;
+    const winningTeam = result === 1 ? homeTeam : awayTeam;
 
     updateScores(winningTeam, 3, scores);
 
