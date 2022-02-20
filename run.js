@@ -1,55 +1,54 @@
-let students = [
-  {
-     'id': 001,
-     'f_name': 'Alex',
-     'l_name': 'B',
-     'gender': 'M',
-     'married': false,
-     'age': 22,
-     'paid': 250,  
-     'courses': ['JavaScript', 'React']
-  },
-  {
-     'id': 002,
-     'f_name': 'Ibrahim',
-     'l_name': 'M',
-     'gender': 'M',
-     'married': true,
-     'age': 32,
-     'paid': 150,  
-     'courses': ['JavaScript', 'PWA']
-  },
-  {
-     'id': 003,
-     'f_name': 'Rubi',
-     'l_name': 'S',
-     'gender': 'F',
-     'married': false,
-     'age': 27,
-     'paid': 350,  
-     'courses': ['Blogging', 'React', 'UX']
-  },
-  {
-     'id': 004,
-     'f_name': 'Zack',
-     'l_name': 'F',
-     'gender': 'M',
-     'married': true,
-     'age': 36,
-     'paid': 250,  
-     'courses': ['Git', 'React', 'Branding']
-  } 
-];
+'use strict';
 
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
 
-const femaleStudents = students.filter((element, index) => {
-  return element.gender === 'F';
-})
+let inputString = '';
+let currentLine = 0;
 
-console.log(femaleStudents);
-
-const fullNames = students.map((element, index) => {
-  return {'fullName': element['f_name'] + ' ' + element['l_name']}
+process.stdin.on('data', function(inputStdin) {
+    inputString += inputStdin;
 });
 
-console.log(fullNames);
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the 'plusMinus' function below.
+ *
+ * The function accepts INTEGER_ARRAY arr as parameter.
+ */
+
+function plusMinus(arr) {
+    let numberStore = {};
+    let length = array.length;
+    
+    for (let i; i <= arr.length; i++) {
+        if (arr[i] < 0) {
+           console.log(arr[i]);
+           numberStore.negative += 1;
+        } else if (arr[i] > 0) {
+            numberStore.positive += 1;
+        }
+        else numberStore.zero += 1;
+    }
+    
+    console.log(numberStore.negative);
+    console.log(numberStore.positive);
+    console.log(numberStore.zero);
+}
+
+function main() {
+    const n = parseInt(readLine().trim(), 10);
+
+    const arr = readLine().replace(/\s+$/g, '').split(' ').map(arrTemp => parseInt(arrTemp, 10));
+
+    plusMinus(arr);
+}
