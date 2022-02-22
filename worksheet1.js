@@ -1,26 +1,18 @@
-function merge(arr1, arr2) {
-  let i = 0;
-  let j = 0;
+function maxSubsetSumNoAdjacent(arr) {
+  if (!arr.length) return 0;
+  if (arr.length === 1) return arr[0];
 
-  let results = [];
+  let second = arr[0];
+  let largest = Math.max(arr[0], arr[1]);
 
-  while (i < arr1.length && j < arr2.length) {
-    if (arr1[i] < arr2[j]) {
-      results.push(arr1[i]);
-      i++;
-    } else {
-      results.push(arr2[j]);
-      j++;
-    }
-    while (i < arr1.length) {
-      results.push(arr1[i]);
-      i++;
-    }
-    while (j < arr2.length) {
-      results.push(arr2[j]);
-      j++;
-    }
+  for (let i = 2; i < arr.length; i++) {
+    const current = Math.max(largest, second + arr[i]);
+    second = largest;
+    largest = current;
   }
-  return results;
+  return largest;
 }
 
+const arr = [1, 7, 3, 9, 4, 12, 21, 4, 16, 5, 1, 6, 10];
+
+console.log(maxSubsetSumNoAdjacent(arr));
