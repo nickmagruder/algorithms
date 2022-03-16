@@ -98,3 +98,314 @@ li:not(:last-of-type) {
 li:hover {
   background-color: #b90e4d;
 }
+
+/* 
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////// 
+ */
+
+/* 
+////////////////////////////////////////////////////////////////////
+// 3 - Pig Emoji
+//////////////////////////////////////////////////////////////////// 
+*/
+
+/* 
+HTML:
+<div class="head">
+  <div>
+    <div class="ear"></div>
+    <div class="ear"></div>
+  </div>
+
+  <div>
+    <div class="eye">
+      <div class="pupil"></div>
+    </div>
+    <div class="eye">
+      <div class="pupil"></div>
+    </div>
+  </div>
+
+  <div class="nose">
+    <div class="nostril"></div>
+    <div class="nostril"></div>
+  </div>
+</div>
+ */
+
+.head {
+  position: relative; /* makes children's absolute possible */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* makes circle */
+  border: 5px solid black;
+  margin-top: 20px;
+  background-color: #ffc0cb;
+}
+
+.ear {
+  /* targets both ears */
+  position: absolute; /* not possible without parent's position: relative */
+  z-index: -1; /* also doesn't work without position: */
+  width: 50px;
+  height: 50px;
+  top: -10px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: #ffc0cb;
+}
+
+.ear:first-child {
+  /* targets first .ear */
+  left: 10px;
+}
+
+.ear:nth-child(2) {
+  /* targets second .ear */
+  right: 10px;
+}
+
+.eye {
+  position: absolute; /* sets the eye to absolute */
+  display: flex; /* sets children to flex-box, not .eye itself */
+  justify-content: center; /* spaces the children .pupils left-right spacing, 
+  note how each .eye has its own individual .pupil child */
+  align-items: center; /* centers children vertically using flexbox */
+  top: 40px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.eye:first-child {
+  left: 30px;
+}
+
+.eye:nth-child(2) {
+  right: 30px;
+}
+
+.pupil {
+  /* targets both .pupils */
+  width: 50%; /* works because flexbox */
+  height: 50%; /* works because flexbox */
+  border-radius: 50%;
+  background-color: black;
+}
+
+.nose {
+  position: absolute; /* works because .head is :relative */
+  display: flex; /* sets children to flex-box */
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  bottom: 30px;
+  /* CENTERING!!!: */
+  left: 50%; /* Pushes left edge to 50%-from-the-left*/
+  transform: translateX(-50%); /* Then we move it back 50%, centering it */
+  border: 2px solid black;
+  border-radius: 35%;
+  background-color: #f57187;
+}
+
+.nostril {
+  /* targeting both .nostrils */
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////// 
+ */
+
+/* 
+////////////////////////////////////////////////////////////////////
+// 4 - Purchase Form
+//////////////////////////////////////////////////////////////////// 
+*/
+
+/* 
+HTML:
+<div id="wrapper">
+  <ol>
+    <li class="selected">Product Selection</li>
+    <li>Payment Method</li>
+    <li>Payment Form</li>
+    <li>Purchase Success</li>
+  </ol>
+
+  <ul>
+    <li class="blue-product">
+      <input type="checkbox" id="algoexpert" />
+      <label for="algoexpert">AlgoExpert</label>
+    </li>
+    <li class="red-product">
+      <input type="checkbox" id="systemsexpert" />
+      <label for="systemsexpert">SystemsExpert</label>
+    </li>
+    <li class="orange-product">
+      <input type="checkbox" id="mlexpert" />
+      <label for="mlexpert">MLExpert</label>
+    </li>
+    <li class="green-product">
+      <input type="checkbox" id="frontendexpert" />
+      <label for="frontendexpert">FrontendExpert</label>
+    </li>
+  </ul>
+
+  <button>Continue</button>
+</div>
+ */
+
+:root {
+  --wrapper-border-radius: 12px;
+  --wrapper-padding: 12px;
+  --wrapper-background-color: #e0e0e0;
+
+  --circle-width: 30px;
+  --circle-radius: calc(var(--circle-width) / 2);
+  --circle-border-width: 4px;
+  --circle-bottom-margin: 8px;
+  --circle-font-size: 24px;
+
+  --selected-background-color: #279600;
+
+  --divider-line-height: 4px;
+
+  --product-offering-height: 40px;
+  --product-offering-padding: 12px;
+  --product-offering-vertical-margin: 12px;
+  --product-offering-border-radius: 8px;
+  --product-offering-left-border-size: 5px;
+
+  --label-left-margin: 4px;
+  --blue-product-color: #626ee3;
+  --red-product-color: #890023;
+  --orange-product-color: #f37f1b;
+  --green-product-color: #11967e;
+
+  --button-padding: 12px;
+  --button-font-size: 16px;
+  --button-border-radius: 8px;
+  --button-background-color: #02203c;
+}
+
+#wrapper {
+  border-radius: var(--wrapper-border-radius);
+  padding: var(--wrapper-padding);
+  background-color: var(--wrapper-background-color);
+}
+
+ol {
+  display: flex;
+  padding: 0;
+  counter-reset: list-items;
+}
+
+li {
+  list-style-type: none;
+}
+
+ol li {
+  position: relative;
+  text-align: center;
+  flex-basis: 100%;
+}
+
+/* Number Circle */
+ol li::before {
+  counter-increment: list-items;
+  content: counter(list-items);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--circle-width);
+  height: var(--circle-width);
+  border-radius: 50%;
+  border: var(--circle-border-width) solid black;
+  margin: 0 auto var(--circle-bottom-margin) auto;
+  background-color: white;
+  font-size: var(--circle-font-size);
+}
+
+.selected::before {
+  color: white;
+  background-color: var(--selected-background-color);
+}
+
+/* Divider Line */
+ol li:not(:first-of-type)::after {
+  content: "";
+  display: block;
+  width: calc(100% - var(--circle-width));
+  height: var(--divider-line-height);
+  background-color: black;
+  position: absolute;
+  left: calc(-50% + var(--circle-radius));
+  top: calc(var(--circle-radius) + var(--circle-border-width) -
+    var(--divider-line-height) / 2);
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  height: var(--product-offering-height);
+  padding: var(--product-offering-padding);
+  border-radius: var(--product-offering-border-radius);
+  margin: var(--product-offering-vertical-margin) 0;
+  background-color: white;
+  font-weight: bold;
+}
+
+.blue-product {
+  border-left: var(--product-offering-left-border-size) solid
+    var(--blue-product-color);
+  color: var(--blue-product-color);
+}
+
+.red-product {
+  border-left: var(--product-offering-left-border-size) solid
+    var(--red-product-color);
+  color: var(--red-product-color);
+}
+
+.orange-product {
+  border-left: var(--product-offering-left-border-size) solid
+    var(--orange-product-color);
+  color: var(--orange-product-color);
+}
+
+.green-product {
+  border-left: var(--product-offering-left-border-size) solid
+    var(--green-product-color);
+  color: var(--green-product-color);
+}
+
+label {
+  margin-left: var(--label-left-margin);
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-background-color);
+  color: white;
+}
