@@ -43,10 +43,10 @@ function isValidSubsequence(array, sequence) {
   return sequenceIndex === sequence.length;
 }
 
-const arr = [5, 1, 22, 25, 6, -1, 8, 10];
+const anarr = [5, 1, 22, 25, 6, -1, 8, 10];
 const seq = [1, 6, -1, 10];
 
-isValidSubsequence(arr, seq);
+isValidSubsequence(anarr, seq);
 
 ////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////
@@ -79,10 +79,10 @@ function sortedSquaredArray(array) {
   return sortedSquares;
 }
 
-const array = [1, 2, 3, 5, 6, 8, 9];
+const array3 = [1, 2, 3, 5, 6, 8, 9];
 const array2 = [-10, -5, 0, 5, 10];
 
-sortedSquaredArray(array);
+sortedSquaredArray(array3);
 sortedSquaredArray(array2);
 
 ////////////////////////////////////////////////////////////////////
@@ -170,6 +170,39 @@ function nonConstructibleChange(coins) {
     currentLargestChange += coin;
   }
   return currentLargestChange + 1;
+}
+
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////
+// 5 - Three Number Sum
+////////////////////////////////////////////////////////////////////
+
+function threeNumberSum(array, targetSum) {
+  array.sort((a, b) => a - b);
+  const triplets = [];
+
+  for (let i = 0; i < array.length - 2; i++) {
+    let left = i + 1;
+    let right = array.length - 1;
+
+    while (left < right) {
+      const currentSum = array[i] + array[left] + array[right];
+      if (currentSum === targetSum) {
+        triplets.push([array[i], array[left], array[right]]);
+        left++;
+        right--;
+      } else if (currentSum < targetSum) {
+        left++;
+      } else if (currentSum > targetSum) {
+        right--;
+      }
+    }
+  }
+  return triplets;
 }
 
 ////////////////////////////////////////////////////////////////////
