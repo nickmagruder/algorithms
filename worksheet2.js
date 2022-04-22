@@ -1,36 +1,27 @@
-function smallestDifference(arrayOne, arrayTwo) {
-  arrayOne.sort((a, b) => a - b);
-  arrayTwo.sort((a, b) => a - b);
+function longestPeak(array) {
+  let longestPeakLength = 0;
+  let i = 1;
 
-  let idxOne = 0;
-  let idxTwo = 0;
-  let smallest = Infinity;
-  let current = Infinity;
-  let smallestPair = [];
-
-  while (idxOne < arrayOne.length && idxTwo < arrayTwo.length) {
-    let firstNum = arrayOne[idxOne];
-    let secondNum = arrayTwo[idxTwo];
-
-    if (firstNum < secondNum) {
-      current = secondNum - firstNum;
-      idxOne++;
-    } else if (secondNum < firstNum) {
-      current = firstNum - secondNum;
-      idxTwo++;
-    } else {
-      return [firstNum, secondNum];
+  while (i < array.length - 1) {
+    const isPeak = array[i - 1] < array[i] && array[i + 1] < array[i];
+    if (!isPeak) {
+      i++;
+      continue;
     }
 
-    if (smallest > current) {
-      smallest = current;
-      smallestPair = [firstNum, secondNum];
+    let leftIdx = i - 2;
+    while (leftIdx >= 0 && array[leftIdx] < array[leftIdx + 1]) {
+      leftIdx--;
     }
+
+    let rightIdx = i + 2;
+    while (rightIdx < array.length && array[rightIdx] < array[rightIdx - 1]) {
+      rightIdx++;
+    }
+
+    const currentPeakLength = rightIdx - leftIdx - 1;
+    longestPeakLength = Math.max(longestPeakLength, currentPeakLength);
+    i = rightIdx;
   }
-  return smallestPair;
+  return longestPeakLength;
 }
-
-arrayOne = [-1, 5, 10, 20, 28, 3];
-arrayTwo = [26, 134, 135, 15, 17];
-
-console.log(smallestDifference(arrayOne, arrayTwo));
