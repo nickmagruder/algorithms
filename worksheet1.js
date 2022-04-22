@@ -1,17 +1,18 @@
-function reverseString(str) {
-  let strArr = str.split('');
-  let start = 0;
-  let end = str.length - 1;
+function arrayOfProducts(array) {
+  const products = new Array(array.length).fill(1);
 
-  while (start <= end) {
-    const temp = strArr[start];
-    strArr[start] = strArr[end];
-    strArr[end] = temp;
-    start++;
-    end--;
+  let leftRunningProduct = 1;
+  for (let i = 0; i < array.length; i++) {
+    products[i] = leftRunningProduct;
+    leftRunningProduct *= array[i];
   }
 
-  return strArr.join('');
+  let rightRunningProduct = 1;
+  for (let i = array.length - 1; i > -1; i--) {
+    products[i] *= rightRunningProduct;
+    rightRunningProduct *= array[i];
+  }
+  return products;
 }
 
-console.log(reverseString('hello'));
+arrayOfProducts([5, 4, 3, 2, 1]);
